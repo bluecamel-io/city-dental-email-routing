@@ -33,6 +33,9 @@ def find_destination(body):
     pass
 
 def lambda_handler(event, context):
+    print('it worked')
+    return
+
     record = event['Records'][0]
     assert record['eventSource'] == 'aws:ses'
 
